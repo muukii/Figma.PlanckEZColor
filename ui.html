@@ -1,0 +1,25 @@
+<h2>Colors text for Planck EZ</h2>
+<!-- <p>Count: <input id="count" value="5"></p> -->
+<!-- <button id="create">Create</button> -->
+<button id="cancel">Cancel</button>
+<button id="run">Generate</button>
+<div>
+  <textarea placeholder="Output" id="output">
+
+  </textarea>
+</div>
+<script>
+
+document.getElementById('run').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'run', script: "" } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+onmessage = (event) => {
+
+  document.getElementById("output").value = event.data.pluginMessage;
+}
+</script>

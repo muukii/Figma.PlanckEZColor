@@ -1,0 +1,13 @@
+{
+  "name": "PlanckEZColor",
+  "version": "1.0.0",
+  "description": "Your Figma plugin",
+  "main": "code.js",
+  "author": "Muukii",
+  "license": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.23.0"
+  }
+}
