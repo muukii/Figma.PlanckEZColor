@@ -7,7 +7,11 @@
   "license": "",
   "dependencies": {
   },
+   "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
   "devDependencies": {
-    "@figma/plugin-typings": "^1.23.0"
+    "@figma/plugin-typings": "*",
+    "typescript": "*"
   }
 }
